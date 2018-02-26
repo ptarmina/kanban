@@ -1,0 +1,10 @@
+
+@import '~sass/variables';
+
+header{
+	background-color:$primary-color;
+	width:100%;
+	margin:0px;
+	height:3em;
+	color:$headertext-color;
+}
