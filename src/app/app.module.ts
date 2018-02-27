@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { BoardComponent } from './components/board/board.component';
 import { LaneComponent } from './components/lane/lane.component';
 import { CardComponent } from './components/card/card.component';
+import { HeaderComponent } from './components/header/header.component'
 
 import { ApiService } from './shared/api.service';
 import { LocalStorage } from './shared/local-storage.service';
-import { HeaderComponent } from './components/header/header.component'
+import { UuidService } from './shared/uuid.service';
+
 
 import 'hammerjs';
 
@@ -25,7 +27,7 @@ import 'hammerjs';
   imports: [
     BrowserModule
   ],
-  providers: [ApiService, LocalStorage],
+  providers: [ApiService, LocalStorage, UuidService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

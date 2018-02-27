@@ -1,3 +1,4 @@
-<p>
-  board works!
-</p>
+<div class="row">
+			<app-lane *ngFor="let lane of default.board[0].lanes" [laneData] = "lane" class="col"></app-lane>
+</div>
+
